@@ -8,4 +8,4 @@ install:
 	rm $(DEST)
 
 uninstall:
-	rm $(BINDIR)/$(NAME)
+	rm $(BINDIR)/$(DEST)

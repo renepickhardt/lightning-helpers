@@ -1,6 +1,14 @@
-Small shell script (together with a Makefile to install it) which processes `lightning-cli listfunds` and outputs the funds in a nicer and cleaner way
+Small shell script (together with a Makefile to install it) which processes `lightning-cli listfunds` and outputs the funds in a nicer and cleaner way:
 
-run `sudo make install` and then `listfunds`. 
+```
+git clone https://github.com/renepickhardt/lightning-helpers.git
+
+cd lightning-helper
+sudo make install
+listfunds
+```
+
+After cloning run `sudo make install` and then `listfunds`. 
 
 The result will look like this: 
 

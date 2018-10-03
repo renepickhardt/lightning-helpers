@@ -3,7 +3,7 @@ Small shell script (together with a Makefile to install it) which processes `lig
 ```
 git clone https://github.com/renepickhardt/lightning-helpers.git
 
-cd lightning-helper
+cd lightning-helpers
 sudo make install
 listfunds
 ```

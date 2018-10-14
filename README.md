@@ -1,23 +1,15 @@
-Small shell script (together with a Makefile to install it) which processes `lightning-cli listfunds` and outputs the funds in a nicer and cleaner way
+This project is a collection of `lightning-helpers` which are small files (usually) written as shell scripts or in python which are supposed to ease the work with c-lightning.
 
-run `sudo make install` and then `listfunds`. 
+currently there are two tools:
 
-The result will look like this: 
+* listfunds is a small tool that gives you a nicer overview of your funds than the native `lighting-cli listfunds` API call
+* pay_anyone_without_invoice is a tool that allows you to pay any lightning node by making a routed payment to yourself and drop a high routing fee for the node which you actually want to pay.
 
-```
-user@computer: listfunds 
-223887 satoshi available to fund channels
-64523 satoshi owned in channels
-7438925 satoshi total channel capacity
----------------
-Total funds: 288410 satoshi
-Percentage of total channel capacity owned: 0.86737
----------------
-Add command line parameter [B] for BTC, [m] for mBTC, [y] for microBTC, [b] for bits and nothting or anything else for satoshi
-by Rene Pickhardt.
-Consider a tip: via curl -i -H "Accept: application/json" -d '{"amount":ENTER_AN_INTEGER_AMOUNT_OF_SATOSHIS_INSTEAD_OF_THIS}' http://ln.rene-pickhardt.de/invoice
-```
+If you want to learn more about these tools visit my youtube channel at: https://www.youtube.com/user/RenePickhardt or send me message at https://twitter.com/renepickhardt
 
-As you can see you can pass several command line options to change the unit of your funds.
+If those tools are usefull for you consider a donation:
+* BTC-address: 1KwjU4UknzbXh1rnP1jAKz9wwjcuYwe9AC
+* segwit: 38fWwbsxvVeBsJpH4bbHTBai8jT8RUa7DE
+* Leave an anonymous tip via the ⚡ Lightning ⚡ network (: Get the invoice with this curl statement `curl -i -H "Accept: application/json" -d '{"amount":ENTER_AN_INTEGER_AMOUNT_OF_SATOSHIS_INSTEAD_OF_THIS}' http://ln.rene-pickhardt.de/invoice` or use the pay_anyone_without_invoice tool which I provide in this repository.
 
-Check out my Lightning Network related Youtube Channel: https://www.youtube.com/user/RenePickhardt
+Feel free to issue a pull request if you find a mistake or if you think that you have a tool that should be listed here!

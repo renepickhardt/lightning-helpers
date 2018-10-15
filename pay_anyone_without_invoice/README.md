@@ -1,4 +1,4 @@
-This programs help you to send a view satohis to another lightning node without the necessity to
+This programs help you to send a few satohis to another lightning node without the necessity to
 have the other node issuing an invoice first.
 
 It is achieved by an idea explained in this video: https://youtu.be/Dwl-0cY6KkU

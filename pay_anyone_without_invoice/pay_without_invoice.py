@@ -42,7 +42,7 @@ def send_the_payment(route):
     invoice = ln1.invoice(1000, label, label)
     print(invoice)
     ph = invoice["payment_hash"]
-    res = ln1.sendpay(route, ph, "initial sendpay without invoice")
+    res = ln1.sendpay(route, ph)
     print(json.dumps(res,sort_keys=True,indent=2))
 
 def pay_without_invoice(dest_id, amount):
@@ -89,7 +89,7 @@ def pay_without_invoice(dest_id, amount):
         fullroute[i]["channel"] = fullroute[i-1]["channel"]
         if fullroute[i]["channel"] == end_short_channel_id:
             break
-    print("motified route over node {} back to myself".format(dest_id))
+    print("modified route over node {} back to myself".format(dest_id))
     print(json.dumps(fullroute,sort_keys=True,indent=2))
     send_the_payment(fullroute)
 

@@ -1,0 +1,1 @@
+lightningd --network regtest --lightning-dir /tmp/regtest-env/ln2 --bitcoin-datadir /tmp/regtest-env/btc --addr 127.0.0.1:2337 --daemon --rpc-file=lightning-rpc --bitcoin-rpcuser=rpcuser --bitcoin-rpcpassword=rpcpassword --log-file=ln2.log --dev-broadcast-interval=1000 --dev-bitcoind-poll=1
